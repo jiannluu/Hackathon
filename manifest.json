@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Your Chrome Extension Name",
+    "version": "1.0.1",
+    "author": "Jason Lu and Nic Jackson",
+    "description": "A description about your Chrome Extension...",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_icon": "images/invisible-copy-16.png",
+      "default_popup": "popup.html",
+      "default_title": "A tooltip popup description when you hover over the Chrome Extension icon."
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content-script.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/invisible-copy-16.png",
+        "32": "images/invisible-copy-32.png",
+        "48": "images/invisible-copy-48.png",
+        "128": "images/invisible-copy-128.png"
+    }
+  }
