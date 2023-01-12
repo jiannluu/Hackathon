@@ -8,7 +8,7 @@
       "activeTab"
     ],
     "action": {
-      "default_icon": "images/invisible-copy-16.png",
+      "default_icon": "images/logo.png",
       "default_popup": "popup.html",
       "default_title": "Click here to begin replacing words on any website!"
     },

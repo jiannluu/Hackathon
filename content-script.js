@@ -17,6 +17,12 @@ function gotMessage (message, sender, sendResponse) {
                     }
                 }
                 text[i].innerText = copyText.join(' ');
+
+                //send message
+                chrome.runtime.sendMessage({
+                    findTxt: '',
+                    replaceTxt: ''
+                });
             }
             // text[i].innerText = text[i].innerText.replace(regex, message.replaceTxt);
         }
@@ -26,6 +32,9 @@ function gotMessage (message, sender, sendResponse) {
         for (let i = 0; i < paragraph.length; i++) {
             paragraph[i].innerText = message.replaceTxt
         }
+        chrome.runtime.sendMessage({
+            replaceTxt: ''
+        });
     }
     else if (message.change === 'supriseVideo') {
         let allLinks = document.querySelector('body')

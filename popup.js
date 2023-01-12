@@ -52,3 +52,11 @@ supriseBtn.onclick = async function (e) {
         chrome.tabs.sendMessage(tabs[0].id, message);
     }
 };
+
+chrome.runtime.onMessage.addListener(gotMessage);
+function gotMessage(request, sender, sendResponse) {
+    console.log('got the message', request)
+    document.getElementById('toFind').value = request.findTxt;
+    document.getElementById('toReplace').value = request.replaceTxt;
+    document.getElementById('toPara').value = request.replaceTxt;
+}
