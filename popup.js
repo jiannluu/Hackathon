@@ -6,9 +6,6 @@ const toPara = document.getElementById('toPara');
 const supriseBtn = document.getElementById('suprise');
 
 sendChangeBtn.onclick = async function (e) {
-    let queryOptions = { active: true, currentWindow: true };
-    await chrome.tabs.query(queryOptions, gotTabs);
-  
     function gotTabs(tabs) {
         let message = {
             change: 'text',
@@ -17,10 +14,19 @@ sendChangeBtn.onclick = async function (e) {
         }
         chrome.tabs.sendMessage(tabs[0].id, message);
     }
+
+    let queryOptions = { active: true, currentWindow: true };
+    await chrome.tabs.query(queryOptions, gotTabs);
+    // await toFind.value = '';
+    // await toReplace.value = '';
+    // await document.getElementById('toFind').value = '';
+    // await document.getElementById('toReplace').value = ''; 
+
+
 };
 
 changePara.onclick = async function (e) {
-    let queryOptions = { active: true, currentWindow: true };
+    let queryOptions = { active: true };
     await chrome.tabs.query(queryOptions, gotTabs);
   
     function gotTabs(tabs) {

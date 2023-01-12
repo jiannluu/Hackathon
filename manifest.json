@@ -1,16 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Your Chrome Extension Name",
+    "name": "Search and Destroy",
     "version": "1.0.1",
     "author": "Jason Lu and Nic Jackson",
-    "description": "A description about your Chrome Extension...",
+    "description": "Replace the words you don't want with a little twist",
     "permissions": [
       "activeTab"
     ],
     "action": {
       "default_icon": "images/invisible-copy-16.png",
       "default_popup": "popup.html",
-      "default_title": "A tooltip popup description when you hover over the Chrome Extension icon."
+      "default_title": "Click here to begin replacing words on any website!"
     },
     "content_scripts": [
         {

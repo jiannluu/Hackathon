@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+ background-image: url('https://media.tenor.com/TIUfh_o9hIUAAAAd/minimoss-pixel-art.gif');
+ background-size: cover;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: 'center';
+    align-items: 'center';
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(241, 229, 117);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(235, 214, 25);
+    border-radius: 3px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(218, 198, 23);
+    box-shadow: 0 0 0 0.5 rgb(0, 0, 0, 0.5);
+    transition: 0.12s;
+}
+
+.btn:active {
+    background-color: rgb(184, 168, 19);
+    transition: 0.12s;
+}
+
+input {
+    font-size: 15px;
+    padding: 5px;
+}

@@ -1,18 +1,22 @@
 <html>
   <head>
     <title>Find and Replacer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-      <img src="./images/invisible-copy-128.png" id="hydrateImage">
-      <label for="toFind">Find this word!</label>
+    <div id="container">
+      <img src="images/invisible-copy-128.png" id="invisibleImg">
+      <label for="toFind" class="text">Find this word!</label>
       <input type="text" id="toFind">
-      <label for='toReplace'>Replace to this!</label>
+      <label for='toReplace' class="text">Replace to this!</label>
       <input type="text" id="toReplace">
-      <button id="change-text">Change my text!</button>
-      <label for="toPara">Replace the website with this text!</label>
+      <button id="change-text" class="btn">Change my text!</button>
+      <label for="toPara" class="text">Replace the website with this text!</label>
       <input type="text" id="toPara">
-      <button id="change-p">Destroy Wesbite!</button>
-      <button id="suprise">Click here for a surprise!</button>
+      <button id="change-p" class="btn">Destroy Wesbite!</button>
+      <button id="suprise" class="btn">Click here for a surprise!</button>
       <script src="popup.js"></script>
+    </div>
   </body>
 </html>
